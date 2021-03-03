@@ -1,3 +1,23 @@
-.current { color: green; }
+body { font-family: 'Balsamiq Sans', cursive; background-color: #191a1b; color: #ece8e2; }
+
+a { color: #3992f8; text-decoration: none; }
+
+a:hover { color: #63aafa; }
+
+.topnav { background-color: #333; overflow: hidden; font-size: 19px; }
+
+.topnav a { float: right; display: block; color: #dfdfdf; text-align: center; padding: 14px 16px; }
+
+.topnav a:hover { background-color: #111; }
+
+.topnav .logo { float: left; }
+
+.container { background-color: #222324; padding: 20px; margin: 20px; overflow: auto; text-align: center; }
+
+ul, li { list-style: none; }
+
+.line { border: 1px solid #ece8e2; }
+
+@media screen and (max-width: 600px) { .topnav a, .topnav .logo { float: none; } }
 
 /*# sourceMappingURL=styles.css.map */
