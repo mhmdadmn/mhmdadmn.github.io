@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/facicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
-    <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
     <!-- Begin Jekyll SEO tag v2.7.1 -->
 <title>Mornin.ga - The inventor’s homepage</title>
 <meta name="generator" content="Jekyll v4.2.0" />
@@ -15,7 +14,7 @@
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Mornin.ga - The inventor’s homepage" />
 <script type="application/ld+json">
-{"headline":"Mornin.ga - The inventor’s homepage","@type":"WebSite","url":"/","@context":"https://schema.org"}</script>
+{"@type":"WebSite","url":"/","headline":"Mornin.ga - The inventor’s homepage","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -30,15 +29,26 @@
   
 </div>
 
-    <div class='container'><h1>Hi fellow inventor</h1>
+    
+    <div id="box">
+		<div id="main" class='container'><h1>Hi fellow inventor</h1>
+<script>
+	const monthNames = ["January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"];
+    const dateObj = new Date();
+    const month = monthNames[dateObj.getMonth()];
+    const day = String(dateObj.getDate()).padStart(2, '0');
+    const year = dateObj.getFullYear();
+    const output = month  + '\n'+ day  + ',' + year;
+	document.write("today is " + output);</script>
 
 <div class="line"></div>
 <p>Latest post</p>
   
     <li>
-      <h2><a href="/fruits/2018/08/kiwifruit">Kiwifruit</a></h2>
-      <p>Kiwifruit (often abbreviated as kiwi), or Chinese gooseberry is the edible
-berry of several species of woody vines in the genus Actinidia.</p>
+      <h2><a href="/general/2021/03/first-post">This is the first post ever</a></h2>
+      <p>Welcome everyone to my website.
+I hope I’m creating something</p>
 
     </li>
   
@@ -46,6 +56,9 @@ berry of several species of woody vines in the genus Actinidia.</p>
 <a href="/blog">more posts</a>
 <div class="line"></div>
 </div>
+		<div id="sidebar" class='container'>G</div>
+    </div>
+    
     <center><small>MORNINGA © 2021</small></center>
   </body>
 </html>

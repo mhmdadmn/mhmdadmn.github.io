@@ -12,12 +12,14 @@ a:hover { color: #63aafa; }
 
 .topnav .logo { float: left; }
 
-.container { background-color: #222324; padding: 20px; margin: 20px; overflow: auto; text-align: center; }
+.container { background-color: #222324; padding: 20px; margin: 20px 7px 20px 7px; overflow: auto; text-align: center; }
 
 ul, li { list-style: none; }
 
 .line { border: 1px solid #ece8e2; }
 
-@media screen and (max-width: 600px) { .topnav a, .topnav .logo { float: none; } }
+#box { display: grid; grid-template-columns: 3fr 1fr; }
+
+@media screen and (max-width: 600px) { .topnav a, .topnav .logo { float: none; } #box { grid-template-columns: 1fr; } #main { margin-bottom: 7px; } #sidebar { margin-top: 7px; } }
 
 /*# sourceMappingURL=styles.css.map */

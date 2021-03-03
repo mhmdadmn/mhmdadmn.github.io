@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/fruits/2018/08/bananas</loc>
-<lastmod>2018-08-20T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/fruits/2018/08/apples</loc>
-<lastmod>2018-08-21T00:00:00+01:00</lastmod>
-</url>
-<url>
-<loc>/fruits/2018/08/kiwifruit</loc>
-<lastmod>2018-08-22T00:00:00+01:00</lastmod>
+<loc>/general/2021/03/first-post</loc>
+<lastmod>2021-03-03T00:00:00+01:00</lastmod>
 </url>
 <url>
 <loc>/about</loc>
