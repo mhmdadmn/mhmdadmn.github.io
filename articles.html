@@ -28,6 +28,8 @@
   
     <a href="/" class="logo">MORNINGA</a>
   
+    <a href="/me" >About</a>
+  
     <a href="/articles" >Articles</a>
   
 </div>
@@ -36,13 +38,19 @@
 function light(day){
 	var elem = document.getElementById("light");
 	if(elem.innerHTML==""){
+		localStorage.setItem('light', 'w');
 		day.innerHTML = "🌚";
 		elem.innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#c66d07} a:hover{color:#da801a}.line{border: 1px solid black;';
 		}
 	else{
+		localStorage.setItem('light', 'b');
 		day.innerHTML = "☀";
 		elem.innerHTML="";
 		}
+	}
+if (localStorage.getItem('light')=="w"){
+	document.getElementById("light").innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#c66d07} a:hover{color:#da801a}.line{border: 1px solid black;';
+
 	}
 </script>
 
