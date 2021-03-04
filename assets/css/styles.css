@@ -10,13 +10,15 @@ a:hover { color: #63aafa; }
 
 .topnav a:hover { background-color: #111; }
 
-.topnav .logo { float: left; }
+.topnav .logo { float: left; font-weight: bold; }
 
 .container { background-color: #222324; padding: 20px; margin: 20px 7px 20px 7px; overflow: auto; text-align: center; }
 
+.container a:hover { text-decoration-line: underline; }
+
 ul, li { list-style: none; }
 
-.line { border: 1px solid #ece8e2; }
+.line { border: 1px solid #ece8e2; margin: 10px 0 10px 0; }
 
 #box { display: grid; grid-template-columns: 3fr 1fr; }
 
