@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>About - Mornin.ga</title>
+    <title>Latest tech news for inventors - Mornin.ga</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/facicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
@@ -11,14 +11,14 @@
   <meta name="author" content="Mohamed Admane">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Begin Jekyll SEO tag v2.7.1 -->
-<title>About</title>
+<title>Latest tech news for inventors</title>
 <meta name="generator" content="Jekyll v4.2.0" />
-<meta property="og:title" content="About" />
+<meta property="og:title" content="Latest tech news for inventors" />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="About" />
+<meta property="twitter:title" content="Latest tech news for inventors" />
 <script type="application/ld+json">
-{"@type":"WebPage","url":"/me","headline":"About","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"/news","headline":"Latest tech news for inventors","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -60,15 +60,45 @@ if (localStorage.getItem('light')=="w"){
     
     <div id="box">
 		<div id="main" class='container'>
-			<h1 id="about">About</h1>
+			<script>
+var getJSON = function(url, callback) {
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', url, true);
+    xhr.responseType = 'json';
+    xhr.onload = function() {
+      var status = xhr.status;
+      if (status === 200) {
+        callback(null, xhr.response);
+      } else {
+        callback(status, xhr.response);
+      }
+    };
+    xhr.send();
+};
 
-<p>Hello everyone, I’m Mohamed Admane and I want to be an inventor insha Allah(if God is willing). 
-I always loved creating stuff, I started with websites then to video games, then to youtube channel, then to movies and cartoons, then 3d models…. 
-basically I love learning and then I rememberd that I love engineering and creating physical stuff and thought that invention of physical things is in the top of the pyramid, so now I’m in a journey or a mission to fix big problems and help humanity insha Allah.</p>
+getJSON('https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Freddit.com%2Fr%2Ftechnews%2Bgadgets%2Btech%2Ftop.rss',
+function(err, data) {
+  if (err == null) {
+	  const entries = data["items"];
+	  entries.forEach(el => {
+		  var temp = document.createElement('div');
+		  temp.innerHTML = el.content;
+		  var c = temp.firstChild;
+		  
+		  var url = document.evaluate("//a[text()='[link]']", c, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue.getAttribute("href"); 
+		  var title = el.title;
 
-<p>I created this website to help me get all the stuff I needed in one place, I hope you get that too.</p>
+		  document.getElementById("news").innerHTML += "<h4><a href='/redirect?to="+ url +"' target='_blank' rel='noopener noreferrer'>"+ title +"</a></h4><div class='line'></div>";
+		  })
+	  }
+  else{document.getElementById("news").innerHTML("there's an error, Sorry")}
+});
+</script>
 
-<p>Thank you.</p>
+<h1>Latest news</h1>
+<div id="news" style="text-align: left;"></div>
+<p>all this news is the top posts of these subreddits: gadgets, technews and tech. with the help of rss2json.com's api.</p>
+<p>if there's no news then there's some error that I will fix soon</p>
 
 			<div style="text-align: right;"><a href="/">Return home</a></div>
 		</div>
