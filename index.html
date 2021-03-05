@@ -69,7 +69,7 @@ if (localStorage.getItem('light')=="w"){
     const day = String(dateObj.getDate()).padStart(2, '0');
     const year = dateObj.getFullYear();
     const output = month  + '\n'+ day  + ',' + year;
-	document.write("today is " + output);
+	document.write("Today is " + output);
 	
 	var getJSON = function(url, callback) {
     var xhr = new XMLHttpRequest();
@@ -103,7 +103,9 @@ console.log(days(new Date))
 <div class="item">
 	<div class="line"></div>
 	Read some <a href="/news">news</a>
+	<div class="line"></div>
 </div>
+<!--
 <div class="item">
 	<div class="line"></div>
 	<p>Latest article</p>
@@ -117,16 +119,18 @@ I hope I’m creating something</p>
 	<a href="/articles">more articles</a>
 	<div class="line"></div>
 </div>
+-->
 
 			
 		</div>
 		
 		<div id="sidebar" class='container'>
 			<ul style="text-align: left;">
-			<li>fix <a href='/worldproblems'>world problems</a></li>
-			<li>inventor's <a href='/toolbox'>toolbox</a></li>
-			<li>get answers to any of your scientific questions with accurate, in-depth explanations <a href="/redirect?to=https://reddit.com/r/askscience/" target='_blank' rel='noopener noreferrer'>here</a></li>
-			<li>get answers to any of your scientific questions with friendly, simplified explanations <a href="/redirect?to=https://reddit.com/r/explainlikeimfive/" target='_blank' rel='noopener noreferrer'>here</a></li>
+			<li>Fix <a href='/worldproblems'>world problems</a></li>
+			<li>Inventor's <a href='/toolbox'>toolbox</a></li>
+			<li>Get answers to any of your scientific questions with accurate, in-depth explanations <a href="/redirect?to=https://reddit.com/r/askscience/" target='_blank' rel='noopener noreferrer'>here</a></li>
+			<li>Get answers to any of your scientific questions with friendly, simplified explanations <a href="/redirect?to=https://reddit.com/r/explainlikeimfive/" target='_blank' rel='noopener noreferrer'>here</a></li>
+			<li><a href="/cool-links-to-pass-the-time">Cool links to pass the time</a></li>
 			</ul>
 		</div>
     </div>
