@@ -23,6 +23,7 @@
 
   </head>
   <body>
+	  
     <div class="topnav">
 	<a href="javascript:void(0)" onclick="light(this);">☀</a>
   
@@ -40,7 +41,7 @@ function light(day){
 	if(elem.innerHTML==""){
 		localStorage.setItem('light', 'w');
 		day.innerHTML = "🌚";
-		elem.innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#c66d07} a:hover{color:#da801a}.line{border: 1px solid black;';
+		elem.innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#0d35ab;} a:hover{color:#da801a}.line{border: 1px solid black;';
 		}
 	else{
 		localStorage.setItem('light', 'b');
@@ -49,7 +50,7 @@ function light(day){
 		}
 	}
 if (localStorage.getItem('light')=="w"){
-	document.getElementById("light").innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#c66d07} a:hover{color:#da801a}.line{border: 1px solid black;';
+	document.getElementById("light").innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#0d35ab;} a:hover{color:#da801a}.line{border: 1px solid black;';
 
 	}
 </script>
@@ -71,9 +72,18 @@ I hope I’m creating something</p>
 
 			<div style="text-align: right;"><a href="/">Return home</a></div>
 		</div>
-		<div id="sidebar" class='container'>G</div>
+		<div id="sidebar" class='container'>fix <a href='/worldproblems'>world problems</a></div>
     </div>
     
-    <center><small>MORNINGA © 2021 - Made with ❤️ in Algiers</small></center>
+    <div class="topnav" style='text-align: center;background-color: unset;font-size: 17px;'>
+  
+    <a href="/donate" style="float: none;display: inline-block;"  target='_blank' rel='noopener noreferrer'>Donate</a>
+  
+    <a href="https://twitter.com/mohamed_admane" style="float: none;display: inline-block;"  target='_blank' rel='noopener noreferrer'>Follow me on twitter</a>
+  
+</div>
+
+    
+    <center><p style='font-size:13px'>MORNINGA © 2021 - Made with ❤️ in Algiers</p></center>
   </body>
 </html>

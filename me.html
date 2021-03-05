@@ -23,6 +23,7 @@
 
   </head>
   <body>
+	  
     <div class="topnav">
 	<a href="javascript:void(0)" onclick="light(this);">☀</a>
   
@@ -40,7 +41,7 @@ function light(day){
 	if(elem.innerHTML==""){
 		localStorage.setItem('light', 'w');
 		day.innerHTML = "🌚";
-		elem.innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#c66d07} a:hover{color:#da801a}.line{border: 1px solid black;';
+		elem.innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#0d35ab;} a:hover{color:#da801a}.line{border: 1px solid black;';
 		}
 	else{
 		localStorage.setItem('light', 'b');
@@ -49,7 +50,7 @@ function light(day){
 		}
 	}
 if (localStorage.getItem('light')=="w"){
-	document.getElementById("light").innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#c66d07} a:hover{color:#da801a}.line{border: 1px solid black;';
+	document.getElementById("light").innerHTML = 'body{background-color: #ece8e2;color: #191a1b;}.container{background-color:#dddcdb}.topnav {background-color: #cccccc;} .topnav a{color:#202020}.topnav a:hover {background-color: #eeeeee;} a{color:#0d35ab;} a:hover{color:#da801a}.line{border: 1px solid black;';
 
 	}
 </script>
@@ -59,13 +60,24 @@ if (localStorage.getItem('light')=="w"){
 		<div id="main" class='container'>
 			<h1 id="about">About</h1>
 
-<p>Hello everyone, I’m Mohamed Admane and I want to be an inventor.</p>
+<p>Hello everyone, I’m Mohamed Admane and I want to be an inventor insha Allah(if God is willing). I always loved creating stuff, I started with websites then to video games, then to youtube channel, then to movies and cartoons, then 3d models…. basicly I love learning and then I rememberd that I love engineering and creating physical stuff and thought that invention of physical things is in the top of the pyramid, so now I’m searching for how to fix big problems and help humanity.</p>
+
+<p>I created this website to help me get all the stuff I needed in one place, I hope you get that too.</p>
 
 			<div style="text-align: right;"><a href="/">Return home</a></div>
 		</div>
-		<div id="sidebar" class='container'>G</div>
+		<div id="sidebar" class='container'>fix <a href='/worldproblems'>world problems</a></div>
     </div>
     
-    <center><small>MORNINGA © 2021 - Made with ❤️ in Algiers</small></center>
+    <div class="topnav" style='text-align: center;background-color: unset;font-size: 17px;'>
+  
+    <a href="/donate" style="float: none;display: inline-block;"  target='_blank' rel='noopener noreferrer'>Donate</a>
+  
+    <a href="https://twitter.com/mohamed_admane" style="float: none;display: inline-block;"  target='_blank' rel='noopener noreferrer'>Follow me on twitter</a>
+  
+</div>
+
+    
+    <center><p style='font-size:13px'>MORNINGA © 2021 - Made with ❤️ in Algiers</p></center>
   </body>
 </html>
