@@ -16,8 +16,6 @@ a:hover { color: #63aafa; }
 
 .container a:hover { text-decoration-line: underline; }
 
-ul, li { list-style: none; }
-
 .line { border: 1px solid #ece8e2; margin: 10px 0 10px 0; }
 
 #box { display: grid; grid-template-columns: 3fr 1fr; }
