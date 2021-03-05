@@ -1,5 +1,7 @@
 body { font-family: 'Balsamiq Sans', cursive; background-color: #191a1b; color: #ece8e2; font-size: 19px; }
 
+h2, p { margin-top: 6px; margin-bottom: 6px; }
+
 a { color: #3992f8; text-decoration: none; }
 
 a:hover { color: #63aafa; }
