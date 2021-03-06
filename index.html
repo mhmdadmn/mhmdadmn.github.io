@@ -97,11 +97,17 @@ function(err, data) {
 function days (d) {
   return Math.ceil((new Date(d.getTime())-new Date(d.getFullYear(), 0, 1))/86400000);
 }
-console.log(days(new Date))
+
+getJSON('/assets/json/daily.json',
+function(err, data) {
+  if (err == null) {
+    document.getElementById("daily").innerHTML = data[days(new Date)].daily;
+  }
+});
 	</script>
 
+<div class="item"><div class="line"></div> <div id="daily"></div> <div class="line"></div></div>
 <div class="item">
-	<div class="line"></div>
 	Read some <a href="/news">news</a>
 	<div class="line"></div>
 </div>
