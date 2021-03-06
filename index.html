@@ -110,7 +110,7 @@ function days (d) {
 getJSON('/assets/json/daily.json',
 function(err, data) {
   if (err == null) {
-    document.getElementById("daily").innerHTML = data[days(new Date)].daily;
+    document.getElementById("daily").innerHTML = data[days(new Date)+1].daily;
   }
 });
 	</script>
