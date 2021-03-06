@@ -1,1 +1,1 @@
-Sitemap: https://mornin.ga/sitemap.xml
+Sitemap: /sitemap.xml
